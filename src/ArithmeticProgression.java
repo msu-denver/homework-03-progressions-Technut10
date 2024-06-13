@@ -3,13 +3,15 @@
  * Instructor: Thyago Mota
  * Description: Homework 03 - The ArithmeticProgression class
  */
+
 /**
- * @author Anthony Putman Date: 06/12/24
  * <h1>Arithmetic Progression</h1>
  * <p>This class inherits the Progression class.</p>
- *  <p>It sets the value to the Fibonacci Progression to the <strong>DEFAULT_VALUE</strong>.</p> <br>
- *  <p>It also sets the previous value to zero.</p>
- */
+ *  <p>It sets the value to the Arithmetic Progression to the <strong>DEFAULT_VALUE</strong> to 0 and <strong>DEFAULT_DIFFERENCE to 1</strong>.</p> <br>
+ *  <p>An arithmetic progression computes the next value by adding parameter difference to its current value. For example, to create the arithmetic progression 0, 2, 4, 6, ... the initial value is 0 and the difference is 2. ArithmeticProgression defines 2 constructors: one that takes both the initial value and the difference, and another one that takes no value at all, setting the initial value to 0 and the difference to 1.</p>
+ * @author Anthony Putman Date: 06/12/24
+ * @version 1.0.0
+ **/
 public class
 ArithmeticProgression extends Progression {
 
@@ -29,6 +31,11 @@ ArithmeticProgression extends Progression {
     public double getValue(){
         return value;
     }
+
+    /**
+     *  Implements the add difference to value operation.
+     * @author Anthony Putman
+     * */
     @Override
     void next() {
             this.value += difference;

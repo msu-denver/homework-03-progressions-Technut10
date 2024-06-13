@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"ArithmeticProgression"},{"p":"<Unnamed>","l":"FibonacciProgression"},{"p":"<Unnamed>","l":"GeometricProgression"},{"p":"<Unnamed>","l":"Progression"}];updateSearchResults();

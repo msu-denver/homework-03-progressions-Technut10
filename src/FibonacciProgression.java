@@ -5,12 +5,18 @@
  */
 
 /**
- * @author Anthony Putman Date: 06/12/24
- * <h1>Fibonacci Progression</h1>
+ *
+ *
+ * Fibonacci Progression
  * <p>This class inherits the Progression class.</p>
- *  <p>It sets the value to the Fibonacci Progression to the <strong>DEFAULT_VALUE</strong>.</p> <br>
- *  <p>It also sets the previous value to zero.</p>
- */
+ *  <p>It sets the value to the Fibonacci Progression to the <strong>DEFAULT_VALUE</strong>.
+ *    This class also sets the previous value to zero.</p><br>
+ *    <p>A fibonacci progression computes the next value by adding both previous numbers.
+ *      0 + 1, 1, 1+1, 2, 2 + 1, 3, etc...  </p>
+ *
+ * @author Anthony Putman Date: 06/12/24
+ * @version 1.0.1
+ **/
 public class FibonacciProgression extends Progression {
 
     protected double previous;
@@ -21,14 +27,27 @@ public class FibonacciProgression extends Progression {
         this.previous = 0;
     }
 
-    public double getValue(){
-        return this.value;
-    }
+
+    /**
+     * <p>void next():</p>
+     * <p>This method progresses the count to the next value. The previous value is calculated by subtracting the value referenced by temp from itself. </p>
+     * Pre-condition : valid real numbers, and temp variable to hold value for next pass.
+     * @author Anthony Putman
+     */
     @Override
     void next() {
-            double temp =0;
-            this.value += this.previous;
-            temp = this.value;
-            this.previous = temp - this.previous;
+        double temp;
+        this.value += this.previous;
+        temp = this.value;
+        this.previous = temp - this.previous;
+    }
+
+    /**
+     * Implements the get current value operation.
+     * @return  value
+     * @author Anthony Putman
+     */
+    public double getValue(){
+        return this.value;
     }
 }

@@ -7,7 +7,10 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * This class implements test methods for each class in the src folder.
+ *
+ **/
 class ProgressionTest {
 
     static final double TOLLERANCE = .00001;
