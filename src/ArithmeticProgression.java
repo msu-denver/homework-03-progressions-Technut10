@@ -19,6 +19,10 @@ ArithmeticProgression extends Progression {
     protected static final double DEFAULT_VALUE      = 0;
     protected static final double DEFAULT_DIFFERENCE = 1;
 
+    /**
+     * Class constructors: One default and one to initialize
+     **/
+
     public ArithmeticProgression(double initValue, double difference) {
         super(initValue);
         this.difference =  difference;

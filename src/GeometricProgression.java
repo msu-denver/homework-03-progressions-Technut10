@@ -19,6 +19,10 @@ public class GeometricProgression extends Progression {
     protected static final double DEFAULT_VALUE = 1;
     protected static final double DEFAULT_RATIO = 2;
 
+
+    /**
+     * Class constructors: One default and one initialized
+     **/
     public GeometricProgression(double initValue, double ratio) {
         super(initValue);
         this.ratio = ratio;

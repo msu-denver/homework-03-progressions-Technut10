@@ -22,6 +22,9 @@ public class FibonacciProgression extends Progression {
     protected double previous;
     protected static final double DEFAULT_VALUE = 1;
 
+   /**
+    * Default class constructor
+    **/
     public FibonacciProgression() {
         super(DEFAULT_VALUE);
         this.previous = 0;
